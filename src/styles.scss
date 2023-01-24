@@ -1,1 +1,243 @@
-/* You can add global styles to this file, and also import other style files */
+// Font //
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
+
+@import 'assets/css/variables.scss';
+@import 'assets/css/mixins.scss';
+
+// background: linear-gradient(to right, #87211c, #490249);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+  position: relative;
+  color: $black1;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+}
+
+/* General starts */
+a {
+  color: $black1;
+}
+button {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+input,
+button,
+textarea,
+select {
+  font-family: 'Mulish', sans-serif;
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active{
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+  &[readonly] {
+    background: $grey2 !important;
+  }
+}
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Mulish', sans-serif;
+}
+textarea {
+  resize: none;
+}
+
+/* Buttons Starts */
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 14px 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: $border-radius1;
+    text-align: center;
+    outline: none;
+    transition: all 0.2s;
+    z-index: 1;
+    &[disabled] {
+    cursor: not-allowed;
+    }
+}
+.prim_btn {
+    color: $white-color;
+    background: $primary6;
+    &:hover,
+    &:focus,
+    &:active {
+        background: $primary8;
+    }
+}
+.sec_btn {
+    color: $secondary6;
+    background: transparent;
+    border: 1px solid $secondary6;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $secondary11;
+      color: $secondary11;
+    }
+}
+.tert_btn {
+  color: $primary1;
+  background-color: $white-color;
+  border: 2px solid $primary1;
+  &:hover {
+    background-color: $primary1;
+    color: $white-color;
+  }
+}
+.load_btn {
+  display: flex;
+  justify-content: center;
+}
+
+/* Buttons ends */
+
+.bg-success-color {
+  background: $success1;
+}
+.bg-danger-color {
+  background: $error1;
+}
+.bg-warning-color {
+  background: $warning1;
+}
+.text-success {
+  color: $success1;
+}
+.text-danger {
+  color: $error1;
+}
+.text-warning {
+  color: $warning1;
+}
+.dis-flex {
+  display: flex;
+  align-items: center;
+}
+.clickable {
+  cursor: pointer;
+}
+.uc {
+  text-transform: uppercase;
+}
+.hover-1 {
+  transition: all 0.2s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Heading and paragragh starts //
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+small {
+  font-size: 14px;
+
+}
+// Heading and paragragh ends //
+
+/* Section starts */
+.container {
+  padding: 0 5%;
+  @media screen and (min-width: 1200px) {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
+.sect {
+  margin: 5rem 0;
+  padding: 3% 0;
+  @media only screen and (max-width: 870px) {
+    margin: 3rem 0;
+  }
+  &_header {
+    text-align: center;
+    margin-bottom: $s-6;
+    p {
+      margin-top: $s-1;
+      color: $grey2;
+    }
+  }
+}
+/* Section ends */
+
+/* Section flex starts */
+.lt_flex_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (max-width: 670px) {
+    display: grid;
+    grid-gap: $s-4;
+  }
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  .lt_flex_details {
+    flex-basis: 50%;
+    &_title {
+      margin-bottom: $s-2;
+    }
+    &_parags {
+      p {
+        &:not(:last-child) {
+          margin-bottom: $s-1;
+        }
+      }
+    }
+    .btn {
+      margin-top: $s-4;
+    }
+  }
+  .lt_flex_img {
+    flex-basis: 40%;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $s-2;
+      position: relative;
+    }
+  }
+}
+/* Section flex ends */
+
