@@ -1,0 +1,104 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: $secondary6;
+  color: $white-color;
+  z-index: 150;
+    .container {
+        justify-content: space-between;
+        height: 4rem;
+        .logo {
+            display: inline-block;
+            img {
+            // height: 38.68656539916992px;
+            // width: 100px;
+            }
+        }
+        nav {
+            .nav_list {
+                display: flex;
+                gap: $s-4;
+                @media only screen and (min-width: 1175px) {
+                    &_item {
+                        position: relative;
+                        cursor: pointer;
+                        padding: 0.5rem;
+                        border: 1px solid transparent;
+                        &:hover {
+                            border: 1px solid $white-color;
+                        }
+                        .icon {
+                            // width: 24px;
+                            // height: 24px;
+                            margin-left: $s-1;
+                        }
+                    }
+                }
+            }
+            .nav_btns {
+            @media only screen and (min-width: 1175px) {
+                margin-left: $s-6;
+                .btn {
+                &:not(:last-child) {
+                    margin-right: $s-2;
+                }
+                }
+            }
+            }
+            @media only screen and (max-width: 1175px) {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            // justify-content: center;
+            gap: $s-4;
+            position: absolute;
+            left: 0;
+            top: 5rem;
+            width: 100%;
+            min-height: 100vh;
+            background-color: $white-color;
+            padding: $s-5;
+            .nav_list {
+                &_item {
+                font-size: 18px;
+                // font-weight: 600;
+                cursor: pointer;
+                transition: 0.2s;
+                &:not(:last-child) {
+                    margin-bottom: $s-4;
+                }
+                &:hover {
+                    color: $secondary8;
+                }
+                &:first-child {
+                    display: none;
+                }
+                }
+            }
+            &.open-menu {
+                display: flex;
+            }
+            .nav_btns {
+                display: grid;
+                grid-gap: $s-2;
+                .btn {
+                border-radius: $border-radius3;
+                &:first-child {
+                    border: transparent;
+                }
+                }
+            }
+            }
+        }
+        .hamburger {
+            display: none;
+            @media only screen and (max-width: 1175px) {
+            display: block;
+            }
+        }
+    }
+}

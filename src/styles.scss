@@ -96,40 +96,26 @@ textarea {
       color: $secondary11;
     }
 }
-.tert_btn {
-  color: $primary1;
-  background-color: $white-color;
-  border: 2px solid $primary1;
-  &:hover {
-    background-color: $primary1;
-    color: $white-color;
-  }
-}
-.load_btn {
-  display: flex;
-  justify-content: center;
-}
-
 /* Buttons ends */
 
-.bg-success-color {
-  background: $success1;
-}
-.bg-danger-color {
-  background: $error1;
-}
-.bg-warning-color {
-  background: $warning1;
-}
-.text-success {
-  color: $success1;
-}
-.text-danger {
-  color: $error1;
-}
-.text-warning {
-  color: $warning1;
-}
+// .bg-success-color {
+//   background: $success1;
+// }
+// .bg-danger-color {
+//   background: $error1;
+// }
+// .bg-warning-color {
+//   background: $warning1;
+// }
+// .text-success {
+//   color: $success1;
+// }
+// .text-danger {
+//   color: $error1;
+// }
+// .text-warning {
+//   color: $warning1;
+// }
 .dis-flex {
   display: flex;
   align-items: center;

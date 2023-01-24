@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./default-header.component.scss']
 })
 export class DefaultHeaderComponent {
+  hamClick: any;
 
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 }

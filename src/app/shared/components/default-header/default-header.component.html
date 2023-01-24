@@ -1,1 +1,65 @@
-<p>default-header works!</p>
+<header>
+    <div class="container dis-flex">
+      <span routerLink="/" class="clickable">
+        <img src="../../../../assets/img/logo-white.svg" alt="image" />
+      </span>
+      <nav class="dis-flex" [class.open-menu]="hamClick">
+        <ul class="nav_list">
+          <li
+            class="nav_list_item"
+            routerLinkActive="active"
+            routerLink=""
+            [routerLinkActiveOptions]="{ exact: true }"
+            (click)="hamClick = false"
+          >
+            Home
+          </li>
+          <li
+            class="nav_list_item dis-flex"
+            routerLinkActive="active"
+            routerLink="/pricing"
+            (click)="hamClick = false"
+          >
+            About Us
+            <img src="../../../../assets/img/Vector.png" alt="" class="icon">
+        </li>
+          <li
+            class="nav_list_item"
+            routerLinkActive="active"
+            routerLink="/robotics-championship"
+            (click)="hamClick = false"
+          >
+            Our Services
+          </li>
+          <li
+            class="nav_list_item"
+            routerLinkActive="active"
+            routerLink="/robotics-championship"
+            (click)="hamClick = false"
+          >
+            Projects
+          </li>
+          <li
+            class="nav_list_item"
+            routerLinkActive="active"
+            routerLink="/robotics-championship"
+            (click)="hamClick = false"
+          >
+            Contact Us
+          </li>
+        </ul>
+      </nav>
+      <!-- Hamburger -->
+      <div class="hamburger clickable" (click)="hamClick = !hamClick">
+        <img
+          [src]="
+            hamClick
+              ? '../../../../assets/img/svg/arrow-down.svg'
+              : '../../../../assets/img/svg/arrow-right.svg'
+          "
+          alt=""
+        />
+      </div>
+    </div>
+  </header>
+  
