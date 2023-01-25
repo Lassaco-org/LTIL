@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeHeroComponent } from './components/home/home-hero/home-hero.component';
 import { HomeAboutComponent } from './components/home/home-about/home-about.component';
 import { HomeServicesComponent } from './components/home/home-services/home-services.component';
+import { CareerComponent } from './components/career/career.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomeServicesComponent } from './components/home/home-services/home-serv
     ContactComponent,
     HomeHeroComponent,
     HomeAboutComponent,
-    HomeServicesComponent
+    HomeServicesComponent,
+    CareerComponent
   ],
   imports: [
     CommonModule,

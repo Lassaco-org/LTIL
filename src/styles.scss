@@ -47,9 +47,9 @@ select {
   &:-webkit-autofill:active{
       -webkit-box-shadow: 0 0 0 30px white inset !important;
   }
-  &[readonly] {
-    background: $grey2 !important;
-  }
+//   &[readonly] {
+//     background: $grey2 !important;
+//   }
 }
 input::placeholder,
 textarea::placeholder {
@@ -174,7 +174,7 @@ small {
   margin: 5rem 0;
   padding: 3% 0;
   @media only screen and (max-width: 870px) {
-    margin: 3rem 0;
+    margin: $s-6 0;
   }
   &_header {
     text-align: center;
