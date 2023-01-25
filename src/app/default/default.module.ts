@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SharedModule } from '../shared/shared.module';
+import { HomeHeroComponent } from './components/home/home-hero/home-hero.component';
+import { HomeAboutComponent } from './components/home/home-about/home-about.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { SharedModule } from '../shared/shared.module';
     DefaultComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    HomeHeroComponent,
+    HomeAboutComponent
   ],
   imports: [
     CommonModule,
