@@ -1,0 +1,30 @@
+@import '../../../../../assets/css/variables.scss';
+@import '../../../../../assets/css/mixins.scss';
+
+.services {
+    &_list {
+        @include card(350px);
+        background-color: $primary6;
+        padding: $s-4 0;
+        &_item {
+            background-color: $white-color;
+            // color: $white-color;
+            padding: $s-2;
+            border-radius: $border-radius3;
+            box-shadow: $box-shadow1;
+            display: grid;
+            // justify-items: center;
+            grid-gap: $s-2;
+            &_img {
+                display: flex;
+                justify-content: center;
+                .icon {
+                    @include icon-area(55px, $primary6);
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

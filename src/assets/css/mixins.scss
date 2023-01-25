@@ -1,8 +1,16 @@
 @mixin card($value, $auto: auto-fill) {
-    display: grid;
-    grid-gap: $s-4;
-    @media only screen and (min-width: 450px) {
-        grid-template-columns: repeat($auto, minmax($value, 1fr));
+    // display: grid;
+    // grid-gap: $s-4;
+    // @media only screen and (min-width: 450px) {
+    //     grid-template-columns: repeat($auto, minmax($value, 1fr));
+    // }
+    display: flex;
+    flex-wrap: wrap;
+    gap: $s-4;
+    justify-content: space-around;
+    &_item {
+        width: $value;
+        flex-basis: auto;
     }
 }
 

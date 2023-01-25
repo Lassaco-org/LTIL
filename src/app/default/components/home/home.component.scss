@@ -1,0 +1,20 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+.benefits {
+    margin: $s-6 auto;
+    @media only screen and (min-width: 745px) {
+        width: 80%;
+    }
+    &_list {
+        gap: $s-2;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background: $secondary6;
+        color: $white-color;
+        padding: $s-1 $s-2;
+        &_item {
+            gap: $s-1;
+        }
+    }
+}
