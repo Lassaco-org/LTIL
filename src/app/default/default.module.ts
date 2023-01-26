@@ -12,6 +12,7 @@ import { HomeAboutComponent } from './components/home/home-about/home-about.comp
 import { HomeServicesComponent } from './components/home/home-services/home-services.component';
 import { CareerComponent } from './components/career/career.component';
 import { HomeProjectsComponent } from './components/home/home-projects/home-projects.component';
+import { HomeTeamComponent } from './components/home/home-team/home-team.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomeProjectsComponent } from './components/home/home-projects/home-proj
     HomeAboutComponent,
     HomeServicesComponent,
     CareerComponent,
-    HomeProjectsComponent
+    HomeProjectsComponent,
+    HomeTeamComponent
   ],
   imports: [
     CommonModule,
