@@ -1,0 +1,27 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+/* go-top */
+.go-top {
+    position: fixed;
+    bottom: 6rem;
+    right: 1rem;
+    z-index: 100;
+    background-color: $primary1;
+    box-shadow: $box-shadow1;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    @include icon-area(44px, $primary2);
+    &.show {
+        opacity: 1;
+    visibility: visible;
+    }
+    & .icon {
+        width: 28px;
+    }
+    &:hover {
+        border: 1px solid $secondary7;
+    }
+}

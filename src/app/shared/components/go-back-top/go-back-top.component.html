@@ -1,1 +1,8 @@
-<p>go-back-top works!</p>
+<!-- Back to top -->
+<a
+  class="go-top clickable"
+  (click)="scrollToTop()"
+  [ngClass]="{ show: windowScrolled }"
+>
+  <img src="../../../../assets/img/svg/bx-chevrons-up.svg" alt="icon" class="icon">
+</a>

@@ -166,12 +166,12 @@ small {
 .container {
   padding: 0 5%;
   @media screen and (min-width: 1200px) {
-    max-width: 1250px;
+    max-width: 1350px;
     margin: 0 auto;
   }
 }
 .sect {
-  margin: 5rem 0;
+  margin: 4rem 0;
   padding: 3% 0;
   @media only screen and (max-width: 870px) {
     margin: $s-6 0;
@@ -196,6 +196,7 @@ small {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: $s-4;
   @media only screen and (max-width: 670px) {
     display: grid;
     grid-gap: $s-4;
@@ -230,4 +231,19 @@ small {
   }
 }
 /* Section flex ends */
+
+/* Sections more starts */
+.sect_more {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: $s-6 0;
+  &_title {
+    margin-bottom: $s-2;
+  }
+  &_btns {
+    gap: $s-4;
+  }
+}
+/* Sections more ends */
 

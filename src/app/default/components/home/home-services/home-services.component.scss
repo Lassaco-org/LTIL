@@ -5,7 +5,7 @@
     &_list {
         @include card(350px);
         background-color: $primary6;
-        padding: $s-4 0;
+        padding: $s-4;
         &_item {
             background-color: $white-color;
             // color: $white-color;
@@ -27,4 +27,9 @@
             }
         }
     }
+}
+
+// sect more 
+.sect_more {
+    margin: $s-3 0;
 }
