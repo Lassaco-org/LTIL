@@ -1,0 +1,20 @@
+<section class="hero-sect">
+    <div class="hero-sect_content">
+        <h2 class="title">Our Board Members</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod arcu adipiscing vitae fusce id.</p>
+    </div>
+</section>
+
+<section class="sect team">
+    <div class="container">
+        <div class="team_list">
+            <div class="team_list_item" *ngFor="let member of members">
+                <img [src]="member.image" alt="image">
+                <div class="team_list_item_details">
+                    <h5 class="name">{{member.name}}</h5>
+                    <p class="role">{{member.role}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+.hero-sect {
+    background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/about-hero.png');
+}
+
+.about {
+    &_list {
+        @include card(350px);
+        &_item {
+            background-color: $white-color;
+            padding: $s-6 $s-2;
+            border-radius: $border-radius3;
+            box-shadow: $box-shadow2;
+            display: grid;
+            grid-gap: $s-2;
+        }
+    }
+}

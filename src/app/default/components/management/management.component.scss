@@ -1,0 +1,39 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+.hero-sect {
+    background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/about-hero.png');
+}
+
+.team {
+    &_list {
+        @include card(320px);
+        &_item {
+            position: relative;
+            height: auto;
+            // background-image: url('../../../../assets/img/team/Frame\ 1000003922.svg');
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            img {
+                // position: absolute;
+                box-shadow: $box-shadow2;
+                width: 100%;
+                height: 100%;
+            }
+            &_details {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: $secondary6;
+                color: $white-color;
+                border-radius:  $border-radius3 $border-radius3 0 0;
+                padding: $s-2;
+                text-align: center;
+                .name {
+                    margin-bottom: $s-1;
+                }
+            }
+        }
+    }
+}

@@ -7,9 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: $s-4;
-    justify-content: space-around;
+    @media only screen and (min-width: 550px) {
+        justify-content: space-around;
+    }
     &_item {
         flex-basis: auto;
+        width: 100%;
         @media only screen and (min-width: 550px) {
             width: $value;
         }
