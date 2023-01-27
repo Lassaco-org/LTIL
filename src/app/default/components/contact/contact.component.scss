@@ -20,15 +20,21 @@
     .title {
         margin-bottom: $s-4;
     }
-    &_info {
+    &_info, 
+    &_talk {
         flex-basis: 50%;
+        padding: $s-6;
+        @media only screen and (max-width: 550px) {
+            padding: $s-3;
+        }
+    }
+    &_info {
         background-color: $primary6;
         color: $white-color;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: $s-4;
-        padding: $s-6;
         a {
             color: $white-color;
         }
@@ -55,10 +61,8 @@
         }
     }
     &_talk {
-        flex-basis: 50%;
         background-color: $white-color;
         border-radius: $border-radius3;
-        padding: $s-6;
         .form {
            @include form();
         }

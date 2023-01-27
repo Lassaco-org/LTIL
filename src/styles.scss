@@ -79,6 +79,7 @@ textarea {
 .prim_btn {
     color: $white-color;
     background: $primary6;
+    border: 1px solid $primary6;
     &:hover,
     &:focus,
     &:active {

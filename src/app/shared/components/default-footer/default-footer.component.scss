@@ -46,7 +46,9 @@
             flex-wrap: wrap;
             gap: $s-3;
             .contact {
-                width: 200px;
+                @media only screen and (min-width: 550px) {
+                    width: 200px;
+                }
                 @media screen and (min-width: 1015px) {
                     margin-right: 15rem;
                 }
@@ -56,7 +58,9 @@
                 }
             }
             .links-area {
-                width: 200px;
+                @media only screen and (min-width: 550px) {
+                    width: 200px;
+                }
                 &_list {
                     display: grid;
                     grid-gap: $s-1;

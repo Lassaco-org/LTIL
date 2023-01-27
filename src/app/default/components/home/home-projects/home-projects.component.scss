@@ -15,7 +15,7 @@
             @include card(280px);
             &_item {
                 background-color: $primary1;
-                padding: $s-2;
+                padding: $s-4 $s-2;
                 border-radius: $border-radius2;
                 box-shadow: $box-shadow1;
                 display: grid;
