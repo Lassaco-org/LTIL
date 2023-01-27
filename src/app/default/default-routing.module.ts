@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
-import { BoardComponent } from './components/board/board.component';
+import { BoardComponent } from './components/about/board/board.component';
 import { CareerComponent } from './components/career/career.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
-import { ManagementComponent } from './components/management/management.component';
+import { ManagementComponent } from './components/about/management/management.component';
+import { ServicesComponent } from './components/services/services.component';
 import { DefaultComponent } from './default.component';
 
 const routes: Routes = [
@@ -50,6 +51,14 @@ const routes: Routes = [
         component: BoardComponent,
         data: {
           title: 'Board',
+          description: 'Description Meta Tag Content',
+        },
+      },
+      {
+        path: 'services',
+        component: ServicesComponent,
+        data: {
+          title: 'Services',
           description: 'Description Meta Tag Content',
         },
       },

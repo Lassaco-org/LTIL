@@ -1,0 +1,30 @@
+@import '../../../../assets/css/variables.scss';
+@import '../../../../assets/css/mixins.scss';
+
+.hero-sect {
+    background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/services-hero.png');
+}
+
+.services {
+    &_list {
+        @include card(350px);
+        &_item {
+            background-color: $white-color;
+            padding: $s-4 $s-2;
+            border-radius: $border-radius3;
+            box-shadow: $box-shadow2;
+            display: grid;
+            grid-gap: $s-2;
+            &_img {
+                display: flex;
+                justify-content: center;
+                .icon {
+                    @include icon-area(55px, $primary6);
+                    img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

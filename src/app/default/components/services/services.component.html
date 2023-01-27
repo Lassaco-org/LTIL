@@ -1,0 +1,27 @@
+<section class="hero-sect">
+    <div class="hero-sect_content">
+        <h2 class="title">Get in touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod arcu adipiscing vitae fusce id.</p>
+    </div>
+</section>
+
+<section class="services sect">
+    <div class="container">
+        <div class="sect_header">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod arcu adipiscing vitae fusce id.</p>
+        </div>
+    
+        <div class="services_list">
+            <div class="services_list_item" *ngFor="let service of services">
+                <div class="services_list_item_img">
+                    <span class="icon">
+                        <img [src]="service.icon" alt="">
+                    </span>
+                </div>
+                <h4 class="title">{{service.title}}</h4>
+                <p>{{service.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>

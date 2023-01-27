@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { ServiceService } from 'src/app/shared/services/service.service';
 
 @Component({
-  selector: 'app-home-services',
-  templateUrl: './home-services.component.html',
-  styleUrls: ['./home-services.component.scss']
+  selector: 'app-services',
+  templateUrl: './services.component.html',
+  styleUrls: ['./services.component.scss']
 })
-export class HomeServicesComponent {
+export class ServicesComponent {
   services: any
   constructor(private serviceService: ServiceService) {}
   
@@ -16,5 +16,4 @@ export class HomeServicesComponent {
     this.services = this.serviceService.getServices()
     
   }
-
 }
