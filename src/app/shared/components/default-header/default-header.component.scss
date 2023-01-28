@@ -108,11 +108,17 @@ header {
                             ul {
                                 display: grid;
                                 grid-gap: $s-1;
-                                
+                                li {
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
                             }
                         }
-                        &:hover {
-                            // text-decoration: underline;
+                        .dis-flex {
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
