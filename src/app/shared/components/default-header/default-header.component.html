@@ -8,44 +8,82 @@
           <li
             class="nav_list_item"
             routerLinkActive="active"
-            routerLink=""
             [routerLinkActiveOptions]="{ exact: true }"
-            (click)="hamClick = false"
           >
-            Home
-          </li>
-          <li
-            class="nav_list_item dis-flex"
-            routerLinkActive="active"
-            routerLink="/about"
-            (click)="hamClick = false"
-          >
-            About Us
-            <img src="../../../../assets/img/Vector.png" alt="" class="icon">
-        </li>
-          <li
-            class="nav_list_item"
-            routerLinkActive="active"
-            routerLink="/services"
-            (click)="hamClick = false"
-          >
-            Our Services
+            <div class="dis-flex" routerLink=""  (click)="hamClick = false">
+              <p>
+                Home
+              </p>
+            </div>
           </li>
           <li
             class="nav_list_item"
             routerLinkActive="active"
-            routerLink="/projects"
-            (click)="hamClick = false"
           >
-            Projects
+          <div class="dis-flex" routerLink="/about" (click)="hamClick = false">
+            <p>
+              About Us
+            </p>
+            <img src="../../../../assets/img/arrow-right.png" alt="icon" class="icon">
+          </div>
+            <div class="dropdown">
+              <ul>
+                <li routerLink="/about" (click)="hamClick = false">
+                  Our company
+                </li>
+                <li routerLink="/about/management" (click)="hamClick = false">
+                  Our management
+                </li>
+                <li routerLink="/about/board" (click)="hamClick = false">
+                  Our board members
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li
+          class="nav_list_item dis-flex"
+          routerLinkActive="active"
+          >
+            <div class="dis-flex" routerLink="/services" (click)="hamClick = false">
+              <p>
+                Our Services
+              </p>
+              <img src="../../../../assets/img/arrow-right.png" alt="icon" class="icon">
+            </div>
+            <div class="dropdown">
+              <ul>
+                <li>
+                  Real Estate, Property/Building and Facility Management
+                </li>
+                <li>
+                  Financial Technology
+                </li>
+                <li>
+                  Financial Institutions Investment
+                </li>
+              </ul>
+            </div>
+            
           </li>
           <li
             class="nav_list_item"
             routerLinkActive="active"
-            routerLink="/contact"
-            (click)="hamClick = false"
           >
-            Contact Us
+            <div class="dis-flex" routerLink="/projects" (click)="hamClick = false">
+              <p>
+                Projects
+              </p>
+            </div>
+          </li>
+          <li
+            class="nav_list_item"
+            routerLinkActive="active"
+          >
+            <div class="dis-flex" routerLink="/contact" (click)="hamClick = false">
+              <p>
+                Contact Us
+              </p>
+            </div>
           </li>
         </ul>
       </nav>
@@ -54,10 +92,11 @@
         <img
           [src]="
             hamClick
-              ? '../../../../assets/img/svg/arrow-down.svg'
-              : '../../../../assets/img/svg/arrow-right.svg'
-          "
-          alt=""
+              ? '../../../../assets/img/svg/bx-x.svg' 
+              : '../../../../assets/img/svg/bx-menu-alt-left.svg'
+            "
+          alt="icon"
+          class="icon"
         />
       </div>
     </div>
