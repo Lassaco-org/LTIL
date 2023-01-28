@@ -8,11 +8,11 @@
 <section class="sect team">
     <div class="container">
         <div class="team_list">
-            <div class="team_list_item" *ngFor="let management of managements">
-                <img [src]="management.image" alt="image">
+            <div class="team_list_item clickable" *ngFor="let member of members" [title]="member.name">
+                <img [src]="member.image" alt="image">
                 <div class="team_list_item_details">
-                    <h5 class="name">{{management.name}}</h5>
-                    <p class="role">{{management.role}}</p>
+                    <h5 class="name">{{member.name}}</h5>
+                    <p class="role">{{member.role}}</p>
                 </div>
             </div>
         </div>

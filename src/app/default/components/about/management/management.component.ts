@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./management.component.scss']
 })
 export class ManagementComponent {
-  managements = [
+  members = [
     {
       id: 1,
       image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
