@@ -9,19 +9,33 @@ export class CareerComponent {
   careers = [
     {
       id: 1,
-      name: 'First'
+      title: 'First',
+      salary: 300000,
+      type: 'Full-time'
     },
     {
       id: 2,
-      name: 'Second'
+      title: 'Second',
+      salary: 200000,
+      type: 'Part-time'
     },
     {
       id: 3,
-      name: 'Three'
+      title: 'Third',
+      salary: 200000,
+      type: 'Contract'
     },
     {
       id: 4,
-      name: 'Four'
+      title: 'Fourth',
+      salary: 100000,
+      type: 'Internship'
+    },
+    {
+      id: 5,
+      title: 'Fifth',
+      salary: 500000,
+      type: 'Full-time'
     }
   ]
 }
