@@ -17,9 +17,9 @@
                     </ul>
                 </div>
                 <div class="careers_list_item_action">
-                    <button class="btn prim_btn">Apply</button>
+                    <a href="mailto: dheyved@gmail.com" class="career-details_content_btn"><button class="btn prim_btn">Apply</button></a>
 
-                    <span class="dis-flex view clickable">
+                    <span class="dis-flex view clickable" (click)="openCareerDetails(career)">
                         <small>View job</small>
                         <img src="../../../../assets/img/svg/arrow-long-right.svg" alt="icon" class="icon">
                     </span>
@@ -28,3 +28,13 @@
         </div>
     </div>
 </section>
+
+<div class="modal" *ngIf="isCareerModal">
+    <div class="modal_area" [class.show]="isCareerModal">
+        <app-career-details [career]="currentCareer" (careerDetailsModal)="closeCareerDetails()"></app-career-details>
+
+        <span class="modal_area_close clickable" (click)="isCareerModal = false">
+            <img src="../../../../../assets/img/svg/close-square.svg" alt="icon" class="icon">
+        </span>
+    </div>
+</div>
