@@ -4,3 +4,74 @@
 .hero-sect {
     background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/career-hero.png');
 }
+
+.careers {
+    &_list {
+        display: grid;
+        grid-gap: $s-3;
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            gap: $s-4;
+            background-color: $white-color;
+            box-shadow: $box-shadow2;
+            padding: $s-3 $s-4;
+            border-radius: $border-radius3;
+            transition: all 0.2s ease-in;
+            @media only screen and (max-width: 590px) {
+                flex-direction: column;
+                padding: $s-3;
+            }
+            &_details {
+                .title {
+                    margin-bottom: $s-3;
+                }
+                ul {
+                    gap: $s-2;
+                    li {
+                        padding: $s-1;
+                        background-color: $primary1;
+                    }
+                }
+            }
+            &_action {
+                display: flex;
+                flex-direction: column;
+                gap: $s-3;
+                @media only screen and (max-width: 590px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                .view {
+                    gap: $s-1;
+                    transition: all 0.4s ease-in;
+                    &:hover {
+                        .icon {
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+            &:hover {
+                background-color: $primary6;
+                .careers_list_item {
+                    &_details {
+                        .title {
+                            color: $white-color;
+                        }
+                    }
+                    &_action {
+                        color: $white-color;
+                        .btn {
+                            border: 1px solid $white-color;
+                        }
+                        .view {
+                            filter: brightness(10);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

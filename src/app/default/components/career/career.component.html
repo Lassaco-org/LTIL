@@ -4,3 +4,27 @@
         <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod arcu adipiscing vitae fusce id.</p>
     </div>
 </section>
+
+<section class="sect careers">
+    <div class="container">
+        <div class="careers_list">
+            <div class="careers_list_item" *ngFor="let career of careers">
+                <div class="careers_list_item_details">
+                    <h4 class="title">{{career.title}}</h4>
+                    <ul class="dis-flex">
+                        <li>{{career.type}}</li>
+                        <li>{{career.salary}}</li>
+                    </ul>
+                </div>
+                <div class="careers_list_item_action">
+                    <button class="btn prim_btn">Apply</button>
+
+                    <span class="dis-flex view clickable">
+                        <small>View job</small>
+                        <img src="../../../../assets/img/svg/arrow-long-right.svg" alt="icon" class="icon">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
