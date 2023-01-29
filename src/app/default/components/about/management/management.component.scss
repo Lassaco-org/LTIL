@@ -1,41 +1,6 @@
 @import '../../../../../assets/css/variables.scss';
-@import '../../../../../assets/css/mixins.scss';
+@import '../../../../../assets/css/team.scss';
 
 .hero-sect {
     background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../../assets/img/about-hero.png');
-}
-
-.team {
-    &_list {
-        @include card(16.875rem);
-        &_item {
-            transition: all .2s ease;
-            box-shadow: $box-shadow2;
-            img {
-                width: 100%;
-            }
-            &_details {
-                position: relative;
-                width: 100%;
-                background-color: $secondary6;
-                color: $white-color;
-                border-radius:  $border-radius3 $border-radius3 0 0;
-                padding: $s-2;
-                margin-top: -1.875rem;
-                text-align: center;
-                z-index: 10;
-                transition: all .2s ease;
-                .name {
-                    margin-bottom: $s-1;
-                }
-            }
-            &:hover {
-                .team_list_item_details {
-                    background-color: $white-color;
-                    color: $black1;
-
-                }
-            }
-        }
-    }
 }

@@ -16,6 +16,7 @@ import { HomeTeamComponent } from './components/home/home-team/home-team.compone
 import { ManagementComponent } from './components/about/management/management.component';
 import { BoardComponent } from './components/about/board/board.component';
 import { ServicesComponent } from './components/services/services.component';
+import { TeamDetailsComponent } from './components/about/team-details/team-details.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ServicesComponent } from './components/services/services.component';
     HomeTeamComponent,
     ManagementComponent,
     BoardComponent,
-    ServicesComponent
+    ServicesComponent,
+    TeamDetailsComponent
   ],
   imports: [
     CommonModule,

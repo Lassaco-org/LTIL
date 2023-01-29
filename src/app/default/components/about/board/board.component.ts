@@ -56,4 +56,19 @@ export class BoardComponent {
       role: 'Deputy Managing Director, Corporate Service'
     },
   ]
+  currentMember: any;
+  isMemberModal: boolean = false
+
+
+  // Open member details
+  openMemberDetails(member: any) {
+    this.currentMember = member
+    this.isMemberModal = true
+  } 
+  
+  // Close member details
+   closeMemberDetails() {
+    this.isMemberModal = false
+  }
+
 }

@@ -8,7 +8,7 @@
 <section class="sect team">
     <div class="container">
         <div class="team_list">
-            <div class="team_list_item clickable" *ngFor="let member of members" [title]="member.name">
+            <div class="team_list_item clickable" *ngFor="let member of members" [title]="member.name" (click)="openMemberDetails(member)">
                 <img [src]="member.image" alt="image">
                 <div class="team_list_item_details">
                     <h5 class="name">{{member.name}}</h5>
@@ -18,3 +18,14 @@
         </div>
     </div>
 </section>
+
+
+<div class="modal" *ngIf="isMemberModal">
+    <div class="modal_area" [class.show]="isMemberModal">
+        <app-team-details [member]="currentMember" (memberDetailsModal)="closeMemberDetails()"></app-team-details>
+
+        <span class="modal_area_close clickable" (click)="isMemberModal = false">
+            <img src="../../../../../assets/img/svg/close-square.svg" alt="icon" class="icon">
+        </span>
+    </div>
+</div>
