@@ -29,13 +29,6 @@
     border-radius: 50%;
 }
 
-@mixin white-container {
-    background-color: $white-color;
-    border-radius: $border-radius3;
-    padding: $s-3;
-    box-shadow: $box-shadow1;
-}
-
 @mixin form {
     display: grid;
     grid-gap: $s-2;
@@ -56,11 +49,11 @@
             color: $error1;
         }
     }
-    &_btn {
-        .btn {
-            // width: 100%;
-        }
-    }
+    // &_btn {
+    //     .btn {
+    //         width: 100%;
+    //     }
+    // }
 }
 
 @mixin input-field {
