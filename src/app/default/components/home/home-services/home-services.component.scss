@@ -1,38 +1,41 @@
 @import '../../../../../assets/css/variables.scss';
 @import '../../../../../assets/css/mixins.scss';
 
-.services {
-  &_wrapper {
-    background-color: $primary6;
-    padding: $s-4;
+.lt_flex_content {
+  align-items: flex-start;
 
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
   }
 
-  &_list {
-    @include card(312px);
+  .lt_flex_details {
+    flex-basis: 35%;
+  }
 
-    max-width: 1040px;
-    margin: auto;
+  .lt_flex_cards {
+    flex-basis: 55%;
 
-    &_item {
-      background-color: $white-color;
-      // color: $white-color;
-      padding: $s-4 $s-2;
-      border-radius: $border-radius3;
-      box-shadow: $box-shadow1;
-      display: grid;
-      // justify-items: center;
-      grid-gap: $s-2;
+    .services_list {
+      @include card(280px);
 
-      &_img {
-        display: flex;
-        justify-content: center;
+      &_item {
+        background-color: $primary1;
+        padding: $s-4 $s-2;
+        border-radius: $border-radius2;
+        box-shadow: $box-shadow1;
+        display: grid;
+        grid-gap: $s-2;
 
-        .icon {
-          @include icon-area(55px, $primary6);
+        &_img {
+          display: flex;
+          justify-content: center;
 
-          img {
-            width: 40px;
+          .icon {
+            @include icon-area(55px, $primary6);
+
+            img {
+              width: 40px;
+            }
           }
         }
       }

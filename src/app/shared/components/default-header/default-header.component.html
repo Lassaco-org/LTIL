@@ -21,10 +21,9 @@
           <li
             class="nav_list_item"
             routerLinkActive="active"
-            routerLink="/about" 
-            (click)="hamClick = false"
           >
-          <div class="dis-flex" >
+          <div class="dis-flex" routerLink="/about" 
+          (click)="hamClick = false">
             <p>
               About Us
             </p>
@@ -59,13 +58,16 @@
             <div class="dropdown">
               <ul>
                 <li>
-                  Real Estate, Property/Building and Facility Management
+                  Financial Institutions Investment
                 </li>
                 <li>
                   Financial Technology
                 </li>
                 <li>
-                  Financial Institutions Investment
+                  Corporate Gift
+                </li>
+                <li>
+                  Real Estate
                 </li>
               </ul>
             </div>

@@ -1,28 +1,32 @@
-<section class="services sect">
-  <div class=" container sect_header">
-    <h2>Our Services</h2>
-    <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod
-      arcu adipiscing vitae fusce id.</p>
-  </div>
-
-  <div class="services_wrapper">
-    <div class="services_list">
-      <div class="services_list_item" *ngFor="let service of services">
-        <div class="services_list_item_img">
-          <span class="icon">
-            <img [src]="service.icon" alt="">
-          </span>
-        </div>
-        <h4 class="title">{{service.title}}</h4>
-        <p>{{service.description}}</p>
+<section class="sect">
+  <div class="container lt_flex_content">
+    <div class="lt_flex_details">
+      <h2 class="lt_flex_details_title">
+        Our Services
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod
+        arcu adipiscing vitae fusce id. Bibendum sagittis mauris urna cras proin potenti faucibus venenatis. Orci tellus
+        facilisis in interdum donec nisi. Libero aliquet libero consequat viverra. Ullamcorper mollis semper pulvinar
+        aliquet sollicitudin congue et ac mi. Lacinia lacus fermentum in risus tempor sollicitudin. Facilisis pretium
+        diam tempus odio aliquam sed. Dignissim pulvinar purus eget netus consequat.
+      </p>
+      <div class="lt_flex_details_btn dis-flex">
+        <button class="btn prim_btn" routerLink="/services">View Services</button>
       </div>
     </div>
-  </div>
-
-  <div class="container sect_more">
-    <div class="sect_more_btns dis-flex">
-      <button class="btn prim_btn" routerLink="/projects">View more</button>
-      <button class="btn sec_btn" routerLink="/contact">Contact Us</button>
+    <div class="lt_flex_cards">
+      <div class="services_list">
+        <div class="services_list_item" *ngFor="let service of services">
+          <div class="services_list_item_img">
+            <span class="icon">
+              <img [src]="service.icon" alt="">
+            </span>
+          </div>
+          <h4 class="title">{{service.title}}</h4>
+          <p>{{service.description}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

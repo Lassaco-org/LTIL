@@ -9,9 +9,9 @@ export class BoardComponent {
   members = [
     {
       id: 1,
-      image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
+      image: 'assets/img/team/team-7.svg',
+      name: 'Otunba Akin Doherty',
+      role: 'Chairman'
     },
     {
       id: 2,
@@ -45,7 +45,7 @@ export class BoardComponent {
     },
     {
       id: 7,
-      image: 'assets/img/team/team-7.svg',
+      image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
       name: 'Mr Rilwan Oshinusi',
       role: 'Deputy Managing Director, Corporate Service'
     },
