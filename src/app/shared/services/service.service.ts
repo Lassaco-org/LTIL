@@ -10,19 +10,19 @@ export class ServiceService {
       id: 1,
       icon: 'assets/img/svg/home.svg',
       title: 'Real Estate, Property/Building & Facility Management',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ut turpis pulvinar dis eu dui aliquet tellus lectus. Mauris tellus sapien sodales neque natoque.'
+      description: 'LTIL invest in real estate and its value chain.'
     },
     {
       id: 2,
       icon: 'assets/img/svg/wallet-check.svg',
       title: 'Financial Technology',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ut turpis pulvinar dis eu dui aliquet tellus lectus. Mauris tellus sapien sodales neque natoque.'
+      description: 'LTIL invest, partner and collaborate with FinTechs in various niches – Payment, LendTech, InvesTech, Internet providers, Data service and cloud computing Software development etc.'
     },
     {
       id: 3,
       icon: 'assets/img/svg/chart.svg',
       title: 'Financial Institutions Investment',
-      description: 'Lorem ipsum dolor sit amet consectetur. Ut turpis pulvinar dis eu dui aliquet tellus lectus. Mauris tellus sapien sodales neque natoque.'
+      description: 'Investment in banks and other money market instruments of various forms'
     }
   ]
 

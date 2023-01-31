@@ -9,7 +9,7 @@ import { filter, map, mergeMap } from 'rxjs/operators';
 export class SeoService {
 
   
-  siteName: string = "LTIL"
+  siteName: string = "Lasaco Trading and Investment Limited"
 
   constructor(
     private titleService: Title,
