@@ -1,40 +1,41 @@
 <section class="hero-sect">
-    <div class="hero-sect_content">
-        <h2 class="title">Current Openings</h2>
-        <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod arcu adipiscing vitae fusce id.</p>
-    </div>
+  <div class="hero-sect_content">
+    <h2 class="title">Current Openings</h2>
+    <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod
+      arcu adipiscing vitae fusce id.</p>
+  </div>
 </section>
 
 <section class="sect careers">
-    <div class="container">
-        <div class="careers_list">
-            <div class="careers_list_item" *ngFor="let career of careers">
-                <div class="careers_list_item_details">
-                    <h4 class="title">{{career.title}}</h4>
-                    <ul class="dis-flex">
-                        <li>{{career.type}}</li>
-                        <li>{{career.salary}}</li>
-                    </ul>
-                </div>
-                <div class="careers_list_item_action">
-                    <a href="mailto: dheyved@gmail.com" class="career-details_content_btn"><button class="btn prim_btn">Apply</button></a>
-
-                    <span class="dis-flex view clickable" (click)="openCareerDetails(career)">
-                        <small>View job</small>
-                        <img src="../../../../assets/img/svg/arrow-long-right.svg" alt="icon" class="icon">
-                    </span>
-                </div>
-            </div>
+  <div class="container">
+    <div class="careers_list">
+      <div class="careers_list_item" *ngFor="let career of careers">
+        <div class="careers_list_item_details">
+          <h4 class="title">{{career.title}}</h4>
+          <ul class="dis-flex">
+            <li>{{career.type}}</li>
+            <li>{{career.salary}}</li>
+          </ul>
         </div>
+        <div class="careers_list_item_action">
+          <a href="mailto: dheyved@gmail.com" class="career-details_content_btn"><button
+              class="btn prim_btn">Apply</button></a>
+
+          <span class="dis-flex view clickable" (click)="openCareerDetails(career)">
+            <small>View job</small>
+            <img src="../../../../assets/img/svg/arrow-long-right.svg" alt="icon" class="icon">
+          </span>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <div class="modal" *ngIf="isCareerModal">
-    <div class="modal_area" [class.show]="isCareerModal">
-        <app-career-details [career]="currentCareer" (careerDetailsModal)="closeCareerDetails()"></app-career-details>
+  <div class="modal_area" [class.show]="isCareerModal">
 
-        <span class="modal_area_close clickable" (click)="isCareerModal = false">
-            <img src="../../../../../assets/img/svg/close-square.svg" alt="icon" class="icon">
-        </span>
-    </div>
+    <span class="modal_area_close clickable" (click)="isCareerModal = false">
+      <img src="../../../../../assets/img/svg/close-square.svg" alt="icon" class="icon">
+    </span>
+  </div>
 </div>

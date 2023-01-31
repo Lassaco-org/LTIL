@@ -1,1 +1,37 @@
-<p>home-team works!</p>
+<section class="sect">
+  <div class="container sect_header">
+    <h2>Meet Our Directors</h2>
+  </div>
+
+  <section class="team">
+    <div class="container">
+      <div class="team-list">
+        <div class="team-list-item clickable" *ngFor="let member of members">
+          <div class="team-member-card" [title]="member.name">
+            <img [src]="member.image" alt="image">
+            <div class="team-member-card-details">
+              <h5 class="name">{{member.name}}</h5>
+              <p class="role">{{member.role}}</p>
+            </div>
+          </div>
+
+          <div class="team-member-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quod illo
+            molestias possimus provident exercitationem ducimus ea in, ullam pariatur, tenetur, molestiae inventore
+            adipisci dignissimos! Dolor inventore repellat quam quibusdam. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Necessitatibus corporis quas dolorum neque iste nihil facere beatae, saepe quaerat iure
+            velit aliquid nisi officia rerum rem qui adipisci ea vero. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Aliquam ipsa saepe, ab numquam molestiae fugiat ea illo? Aperiam minus veritatis hic
+            vero sed! Excepturi odit at necessitatibus rem libero aperiam.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container sect_more">
+    <div class="sect_more_btns dis-flex">
+      <button class="btn prim_btn" routerLink="/about/management">Meet the team</button>
+    </div>
+  </div>
+</section>

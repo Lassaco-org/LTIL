@@ -2,34 +2,45 @@
 @import '../../../../../assets/css/mixins.scss';
 
 .services {
-    &_list {
-        @include card(350px);
-        background-color: $primary6;
-        padding: $s-4;
-        &_item {
-            background-color: $white-color;
-            // color: $white-color;
-            padding: $s-4 $s-2;
-            border-radius: $border-radius3;
-            box-shadow: $box-shadow1;
-            display: grid;
-            // justify-items: center;
-            grid-gap: $s-2;
-            &_img {
-                display: flex;
-                justify-content: center;
-                .icon {
-                    @include icon-area(55px, $primary6);
-                    img {
-                        width: 40px;
-                    }
-                }
-            }
+  &_wrapper {
+    background-color: $primary6;
+    padding: $s-4;
+
+  }
+
+  &_list {
+    @include card(312px);
+
+    max-width: 1040px;
+    margin: auto;
+
+    &_item {
+      background-color: $white-color;
+      // color: $white-color;
+      padding: $s-4 $s-2;
+      border-radius: $border-radius3;
+      box-shadow: $box-shadow1;
+      display: grid;
+      // justify-items: center;
+      grid-gap: $s-2;
+
+      &_img {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          @include icon-area(55px, $primary6);
+
+          img {
+            width: 40px;
+          }
         }
+      }
     }
+  }
 }
 
 // sect more 
 .sect_more {
-    margin: $s-3 0;
+  margin: $s-3 auto;
 }

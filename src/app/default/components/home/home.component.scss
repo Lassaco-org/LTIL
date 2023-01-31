@@ -2,24 +2,36 @@
 @import '../../../../assets/css/mixins.scss';
 
 .benefits {
-    margin: $s-6 auto;
+  margin: auto;
+
+  @media only screen and (min-width: 745px) {
+    width: 85%;
+    max-width: 1440px;
+  }
+
+  @media only screen and (min-width: 1040px) {
+    width: 70%;
+  }
+
+  &_list {
+    gap: $s-4;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: $secondary6;
+    color: $white-color;
+    padding: $s-4;
+
     @media only screen and (min-width: 745px) {
-        width: 65%;
+      gap: $s-2;
     }
-    &_list {
-        gap: $s-2;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        background: $secondary6;
-        color: $white-color;
-        padding: $s-1 $s-2;
-        &_item {
-            gap: $s-1;
-        }
+
+    &_item {
+      gap: $s-2;
     }
+  }
 }
 
 // Sect more
 .sect_more {
-    margin: $s-6 0;
+  margin: $s-6 auto;
 }

@@ -15,9 +15,11 @@
   text-decoration: none;
   list-style: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Mulish', sans-serif;
   position: relative;
@@ -30,73 +32,85 @@ body {
 a {
   color: $black1;
 }
+
 button {
   border: none;
   outline: none;
   font-size: 16px;
   cursor: pointer;
 }
+
 input,
 button,
 textarea,
 select {
   font-family: 'Mulish', sans-serif;
+
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
-  &:-webkit-autofill:active{
-      -webkit-box-shadow: 0 0 0 30px white inset !important;
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
   }
-//   &[readonly] {
-//     background: $grey2 !important;
-//   }
+
+  //   &[readonly] {
+  //     background: $grey2 !important;
+  //   }
 }
+
 input::placeholder,
 textarea::placeholder {
   font-family: 'Mulish', sans-serif;
 }
+
 textarea {
   resize: none;
 }
 
 /* Buttons Starts */
 .btn {
-    position: relative;
-    display: inline-block;
-    padding: 14px 20px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: $border-radius1;
-    text-align: center;
-    outline: none;
-    transition: all 0.2s;
-    z-index: 1;
-    &[disabled] {
+  position: relative;
+  display: inline-block;
+  padding: 14px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: $border-radius1;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s;
+  z-index: 1;
+
+  &[disabled] {
     cursor: not-allowed;
-    }
+  }
 }
+
 .prim_btn {
-    color: $white-color;
-    background: $primary6;
-    border: 1px solid $primary6;
-    &:hover,
-    &:focus,
-    &:active {
-        background: $primary8;
-    }
+  color: $white-color;
+  background: $primary6;
+  border: 1px solid $primary6;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $primary8;
+  }
 }
+
 .sec_btn {
-    color: $secondary6;
-    background: transparent;
-    border: 1px solid $secondary6;
-    &:hover,
-    &:focus,
-    &:active {
-      border: 1px solid $secondary11;
-      color: $secondary11;
-    }
+  color: $secondary6;
+  background: transparent;
+  border: 1px solid $secondary6;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $secondary11;
+    color: $secondary11;
+  }
 }
+
 /* Buttons ends */
 
 // .bg-success-color {
@@ -121,14 +135,18 @@ textarea {
   display: flex;
   align-items: center;
 }
+
 .clickable {
   cursor: pointer;
 }
+
 .uc {
   text-transform: uppercase;
 }
+
 .hover-1 {
   transition: all 0.2s;
+
   &:hover {
     text-decoration: underline;
   }
@@ -138,58 +156,73 @@ textarea {
 h1 {
   font-size: 2.875rem;
 }
+
 h2 {
   font-size: 2.25rem;
 }
+
 h3 {
   font-size: 1.625rem;
 }
+
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
+
 h5 {
   font-size: 1.375rem;
 }
+
 h6 {
   font-size: 1.25rem;
 }
+
 p {
-  font-size: 1.125;
+  font-size: .9rem;
   font-weight: 500;
 }
+
 small {
-  font-size: 0.875;
+  font-size: 0.75rem;
 
 }
+
 // Heading and paragragh ends //
 
 /* Section starts */
 .container {
   padding: 0 5%;
+
   @media screen and (min-width: 1200px) {
     max-width: 1500px;
     margin: 0 auto;
   }
 }
+
 .sect {
-  margin: 4rem 0;
+  margin: 1rem auto;
   padding: 3% 0;
+
   @media only screen and (max-width: 870px) {
     margin: $s-6 0;
   }
+
   &_header {
     text-align: center;
     margin-bottom: $s-6;
+
     @media only screen and (min-width: 870px) {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     p {
-        margin-top: $s-2;
+      margin-top: $s-2;
     }
   }
 }
+
 /* Section ends */
 
 /* Section flex starts */
@@ -198,18 +231,23 @@ small {
   justify-content: space-between;
   align-items: center;
   gap: $s-4;
+
   @media only screen and (max-width: 670px) {
     display: grid;
     grid-gap: $s-4;
   }
+
   &.row-reverse {
     flex-direction: row-reverse;
   }
+
   .lt_flex_details {
     flex-basis: 50%;
+
     &_title {
       margin-bottom: $s-2;
     }
+
     &_parags {
       p {
         &:not(:last-child) {
@@ -217,12 +255,15 @@ small {
         }
       }
     }
+
     .btn {
       margin-top: $s-4;
     }
   }
+
   .lt_flex_img {
     flex-basis: 40%;
+
     img {
       max-width: 100%;
       height: auto;
@@ -231,6 +272,7 @@ small {
     }
   }
 }
+
 /* Section flex ends */
 
 /* Sections more starts */
@@ -238,14 +280,17 @@ small {
   display: grid;
   justify-content: center;
   text-align: center;
-  margin: $s-6 0;
+  margin: $s-6 auto;
+
   &_title {
     margin-bottom: $s-2;
   }
+
   &_btns {
     gap: $s-4;
   }
 }
+
 /* Sections more ends */
 
 /* Hero sect starts */
@@ -257,10 +302,12 @@ small {
   background-color: rgba(2, 45, 51, 0.5);
   color: $white-color;
   background-position: center;
+
   @media only screen and (min-width: 745px) {
-      margin: 5%; // same as the general sect size
-      border-radius: $border-radius3;
+    margin: 5%; // same as the general sect size
+    border-radius: $border-radius3;
   }
+
   &_content {
     min-height: 280px;
     display: grid;
@@ -268,14 +315,16 @@ small {
     text-align: center;
     filter: drop-shadow(0px 3.13433px 3.13433px rgba(0, 0, 0, 0.03));
     padding: 5%; // same as the general sect size
+
     @media only screen and (min-width: 745px) {
-        border-radius: $border-radius3;
-        width: 60%;
+      border-radius: $border-radius3;
+      width: 60%;
     }
+
     .title {
       margin-bottom: $s-2;
     }
   }
 }
-/* Hero sect ends */
 
+/* Hero sect ends */

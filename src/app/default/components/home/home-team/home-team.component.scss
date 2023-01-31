@@ -1,3 +1,67 @@
 @import '../../../../../assets/css/variables.scss';
 @import '../../../../../assets/css/mixins.scss';
 
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 90vw;
+    gap: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      gap: 2.5rem;
+      flex: 1 0 80vw;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      gap: 3rem;
+      flex: 1 0 70vw;
+    }
+
+    .team-member {
+      &-card {
+        transition: all .2s ease;
+        box-shadow: $box-shadow2;
+
+        img {
+          width: 100%;
+        }
+
+        &-details {
+          position: relative;
+          width: 100%;
+          background-color: $secondary6;
+          color: $white-color;
+          border-radius: $border-radius3 $border-radius3 0 0;
+          padding: $s-2;
+          margin-top: -1.875rem;
+          text-align: center;
+          z-index: 10;
+          transition: all .2s ease;
+
+          .name {
+            font-size: 20px;
+            margin-bottom: $s-1;
+          }
+        }
+
+        &:hover {
+          .team-member-card-details {
+            background-color: $white-color;
+            color: $black1;
+          }
+        }
+      }
+
+      &-description {
+        width: 100%;
+      }
+    }
+  }
+}

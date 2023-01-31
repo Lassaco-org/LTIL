@@ -7,7 +7,7 @@ import { SeoService } from './shared/services/seo.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ltil';
+  title = 'Lasaco Trading and Investment';
 
   constructor(private seoService: SeoService) {
     // Update the routes Title
