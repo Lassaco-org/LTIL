@@ -8,6 +8,7 @@ import { ServiceService } from 'src/app/shared/services/service.service';
 })
 export class HomeServicesComponent {
   services: any
+  
   constructor(private serviceService: ServiceService) {}
   
   ngOnInit(): void {
