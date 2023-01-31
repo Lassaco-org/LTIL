@@ -9,8 +9,10 @@
             class="nav_list_item"
             routerLinkActive="active"
             [routerLinkActiveOptions]="{ exact: true }"
+            routerLink=""  
+            (click)="hamClick = false"
           >
-            <div class="dis-flex" routerLink=""  (click)="hamClick = false">
+            <div class="dis-flex">
               <p>
                 Home
               </p>
@@ -19,8 +21,10 @@
           <li
             class="nav_list_item"
             routerLinkActive="active"
+            routerLink="/about" 
+            (click)="hamClick = false"
           >
-          <div class="dis-flex" routerLink="/about" (click)="hamClick = false">
+          <div class="dis-flex" >
             <p>
               About Us
             </p>
@@ -43,8 +47,10 @@
           <li
           class="nav_list_item dis-flex"
           routerLinkActive="active"
+          routerLink="/services" 
+          (click)="hamClick = false"
           >
-            <div class="dis-flex" routerLink="/services" (click)="hamClick = false">
+            <div class="dis-flex">
               <p>
                 Our Services
               </p>
@@ -68,8 +74,10 @@
           <li
             class="nav_list_item"
             routerLinkActive="active"
+            routerLink="/projects" 
+            (click)="hamClick = false"
           >
-            <div class="dis-flex" routerLink="/projects" (click)="hamClick = false">
+            <div class="dis-flex">
               <p>
                 Projects
               </p>
@@ -78,8 +86,10 @@
           <li
             class="nav_list_item"
             routerLinkActive="active"
+            routerLink="/contact" 
+            (click)="hamClick = false"
           >
-            <div class="dis-flex" routerLink="/contact" (click)="hamClick = false">
+            <div class="dis-flex" >
               <p>
                 Contact Us
               </p>

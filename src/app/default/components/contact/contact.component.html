@@ -16,7 +16,7 @@
                         </span>
                         <div class="contact_info_list_item_content">
                             <h4 class="content_title">Send Us A Mail</h4>
-                            <p class="hover-1"><a href="mailto: dheyved1@gmail.com">info@LTIL.com.ng</a></p>
+                            <p class="hover-1"><a href="mailto: info@LTIL.com.ng">info@LTIL.com.ng</a></p>
                         </div>
                     </div>
                     <div class="contact_info_list_item">
@@ -34,7 +34,7 @@
                         </span>
                         <div class="contact_info_list_item_content">
                             <h4 class="content_title">Phone</h4>
-                            <p class="hover-1"><a href="tel: 01-8937402">07000LTIL (07000527226)</a> </p>
+                            <p class="hover-1"><a href="tel: 07000527226">07000LTIL (07000527226)</a> </p>
                         </div>
                     </div>
                 </div>
@@ -55,33 +55,78 @@
             </div>
             <div class="contact_method_talk">
                 <h3 class="title">Leave Us A Message</h3>
-                <form class="form">
+                <form class="form" [formGroup]="userForm" (ngSubmit)="submitMessage()">
                     <div class="form_control">
                         <label for="fullname">Full Name</label>
-                        <div class="form_control_input">
-                            <input type="text" id="fullname" placeholder="Enter your full name">
+                        <div class="form_control_input" [ngClass]="{
+                            'is-invalid': isFormSubmitted && userForm.controls.fullname.errors
+                          }">
+                            <input type="text" id="fullname" placeholder="Enter your full name" formControlName="fullname">
+                        </div>
+                        <div
+                            class="form_control_message"
+                            *ngIf="isFormSubmitted && userForm.controls.fullname.errors"
+                        >
+                            <small *ngIf="userForm.controls.fullname.errors.required">Fullname is required</small>
                         </div>
                     </div>
                     <div class="form_control">
                         <label for="email">Email</label>
-                        <div class="form_control_input">
-                            <input type="email" id="email" placeholder="Enter your email">
+                        <div class="form_control_input" [ngClass]="{
+                            'is-invalid': isFormSubmitted && userForm.controls.email.errors
+                          }">
+                            <input type="email" id="email" placeholder="Enter your email" formControlName="email">
+                        </div>
+                        <div
+                            class="form_control_message"
+                            *ngIf="isFormSubmitted && userForm.controls.email.errors"
+                        >
+                            <small *ngIf="userForm.controls.email.errors.required">Email is required</small>
+                            <small *ngIf="userForm.controls.email.errors.email">Email is invalid</small>
                         </div>
                     </div>
                     <div class="form_control">
                         <label for="subject">Subject</label>
-                        <div class="form_control_input">
-                            <input type="text" id="subject" placeholder="Enter subject of your message">
+                        <div class="form_control_input" [ngClass]="{
+                            'is-invalid': isFormSubmitted && userForm.controls.subject.errors
+                          }">
+                            <input type="text" id="subject" placeholder="Enter subject of your message" formControlName="subject">
+                        </div>
+                        <div
+                            class="form_control_message"
+                            *ngIf="isFormSubmitted && userForm.controls.subject.errors"
+                        >
+                            <small *ngIf="userForm.controls.subject.errors.required">Subject is required</small>
                         </div>
                     </div>
                     <div class="form_control">
                         <label for="message">Your Message</label>
-                        <div class="form_control_input">
-                            <textarea name="message" id="message" cols="10" rows="3" placeholder="Enter your message"></textarea>
+                        <div class="form_control_input" [ngClass]="{
+                            'is-invalid': isFormSubmitted && userForm.controls.message.errors
+                          }">
+                            <textarea name="message" id="message" cols="10" rows="3" placeholder="Enter your message" formControlName="message"></textarea>
+                        </div>
+                        <div
+                            class="form_control_message"
+                            *ngIf="isFormSubmitted && userForm.controls.message.errors"
+                        >
+                            <small *ngIf="userForm.controls.message.errors.required">Message is required</small>
                         </div>
                     </div>
+                    <div
+                        class="alert"
+                        *ngIf="isAlert"
+                        [class.bg-success-color]="alertColor == 'success'"
+                        [class.bg-danger-color]="alertColor == 'error'"
+                        [class.bg-warning-color]="alertColor == 'warning'"
+                    >
+                        <p>{{ alertMessage }}</p>
+                    </div>
                     <div class="form_btn">
-                        <button class="btn prim_btn">Send message</button>
+                        <button class="btn prim_btn" [disabled]="loading">
+                            <span *ngIf="!loading">Send message</span>
+                            <span *ngIf="loading">Sending...</span>
+                        </button>
                     </div>
                 </form>
             </div>

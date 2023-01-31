@@ -18,6 +18,7 @@ import { BoardComponent } from './components/about/board/board.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TeamDetailsComponent } from './components/about/team-details/team-details.component';
 import { CareerDetailsComponent } from './components/career/career-details/career-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,7 +42,9 @@ import { CareerDetailsComponent } from './components/career/career-details/caree
   imports: [
     CommonModule,
     DefaultRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class DefaultModule { }
