@@ -18,7 +18,7 @@ header {
         nav {
             .nav_list {
                 display: flex;
-                gap: $s-2;
+                gap: $s-3;
                 @media only screen and (min-width: 1000px) {
                     &_item {
                         position: relative;
