@@ -46,9 +46,12 @@
       }
 
       &_card {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         display: grid;
         grid-gap: $s-4;
+
+        @media only screen and (max-width: 768px) {
+          grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        }
 
         &_item {
           display: flex;
