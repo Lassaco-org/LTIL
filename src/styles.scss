@@ -204,7 +204,7 @@ small {
   padding: 3% 0;
 
   @media only screen and (max-width: 870px) {
-    margin: $s-6 0;
+    margin: $s-2 auto;
   }
 
   &_header {
@@ -328,3 +328,71 @@ small {
 }
 
 /* Hero sect ends */
+
+
+/* Bubbles */
+section:has(.bubble) {
+  position: relative;
+  // overflow: hidden;
+}
+
+.bubble {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+
+  position: absolute;
+  z-index: -1;
+
+  &.left {
+    left: -50%;
+  }
+
+  &.right {
+    right: -50%;
+    bottom: -50%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 60vh;
+    height: 60vh;
+
+    &.left {
+      left: -25%;
+    }
+
+    &.right {
+      right: -25%;
+    }
+  }
+}
+
+.bubble:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #068698;
+  background: -webkit-radial-gradient(circle, #068698 0%, #ffffff 100%);
+  background: radial-gradient(circle, #068698 0%, #ffffff 100%);
+  transform: translate3d(0px, 20px, 0) scale(1.5);
+  filter: blur(100px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+.bubble::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}

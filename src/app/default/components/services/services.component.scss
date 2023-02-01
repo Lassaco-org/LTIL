@@ -2,70 +2,82 @@
 @import '../../../../assets/css/mixins.scss';
 
 .hero-sect {
-    background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/services-hero.png');
+  background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/services-hero.png');
 }
 
 .services {
-    &_list {
-        @include card(350px);
-        &_item {
-            background-color: $white-color;
-            padding: $s-4 $s-2;
-            border-radius: $border-radius3;
-            box-shadow: $box-shadow2;
-            display: grid;
-            grid-gap: $s-2;
-            &_img {
-                display: flex;
-                justify-content: center;
-                .icon {
-                    @include icon-area(55px, $primary6);
-                    img {
-                        width: 40px;
-                    }
-                }
-            }
+  &_list {
+    @include card(350px);
+
+    &_item {
+      background-color: $white-color;
+      padding: $s-4 $s-2;
+      border-radius: $border-radius3;
+      box-shadow: $box-shadow2;
+      display: grid;
+      grid-gap: $s-2;
+
+      &_img {
+        display: flex;
+        justify-content: center;
+
+        .icon {
+          @include icon-area(55px, $primary6);
+
+          img {
+            width: 40px;
+          }
         }
+      }
     }
+  }
 }
 
 // projects
 .projects {
-    &_list {
+  &_list {
+    display: grid;
+    grid-gap: $s-4;
+
+    &_item {
+      &_title {
+        color: $primary6;
+        margin-bottom: $s-2;
+      }
+
+      &_card {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         display: grid;
         grid-gap: $s-4;
+
         &_item {
-            &_title {
-                color: $primary6;
-                margin-bottom: $s-2;
+          display: flex;
+          justify-content: space-between;
+          gap: $s-2;
+
+          @media only screen and (max-width: 700px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          &_img {
+            width: 100%;
+            flex-basis: 25%;
+
+            img {
+              width: 100%;
             }
-            &_card {
-                display: grid;
-                grid-gap: $s-4;
-                &_item {
-                    display: flex;
-                    justify-content: space-between;
-                    gap: $s-2;
-                    @media only screen and (max-width: 700px) {
-                        flex-direction: column;
-                        align-items: flex-start;
-                    }
-                    &_img {
-                        width: 100%;
-                        flex-basis: 25%;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    &_descrp {
-                        flex-basis: 75%;
-                        width: 100%;
-                        padding: $s-2;
-                        background-color: $white-color;
-                        box-shadow: $box-shadow2;
-                    }
-                }   
-            }
+          }
+
+          &_descrp {
+            flex-basis: 75%;
+            width: 100%;
+            padding: $s-2;
+            background-color: $white-color;
+            box-shadow: $box-shadow2;
+          }
         }
+      }
     }
+  }
 }
