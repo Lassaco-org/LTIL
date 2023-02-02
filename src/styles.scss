@@ -336,34 +336,54 @@ section:has(.bubble) {
   // overflow: hidden;
 }
 
+.bubble-container {
+  width: 54vh;
+  height: 100vh;
+
+  position: absolute;
+  overflow: hidden;
+
+  &:has(.left) {
+    left: 0;
+  }
+
+  &:has(.right) {
+    right: 0;
+    bottom: -25%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    height: 70vh;
+
+    &:has(.right) {
+      bottom: -50%;
+    }
+  }
+}
+
 .bubble {
-  width: 30vh;
-  height: 30vh;
+  width: 20vh;
+  height: 13vh;
   border-radius: 50%;
 
   position: absolute;
   z-index: -1;
 
+  top: 50%;
+  transform: translateY(-50%);
+
   &.left {
-    left: -50%;
+    left: -25%;
+    transform: translateY(-100%);
   }
 
   &.right {
-    right: -50%;
-    bottom: -50%;
+    right: -25%;
   }
 
   @media only screen and (min-width: 768px) {
-    width: 60vh;
-    height: 60vh;
-
-    &.left {
-      left: -25%;
-    }
-
-    &.right {
-      right: -25%;
-    }
+    width: 26vh;
+    height: 26vh;
   }
 }
 

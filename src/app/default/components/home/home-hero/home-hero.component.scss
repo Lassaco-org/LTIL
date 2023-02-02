@@ -9,14 +9,6 @@
   @media only screen and (max-width: 745px) {
     padding: 5% 0;
     min-height: 100vh;
-
-    &::after {
-      position: absolute;
-      content: url('../../../../../assets/img/Ellipse1.svg');
-      bottom: 60px;
-      left: 0;
-      z-index: -1;
-    }
   }
 
 
