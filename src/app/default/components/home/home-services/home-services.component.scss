@@ -25,7 +25,7 @@
         box-shadow: $box-shadow1;
         display: grid;
         grid-gap: $s-2;
-
+        align-content: flex-start;
         &_img {
           display: flex;
           justify-content: center;
