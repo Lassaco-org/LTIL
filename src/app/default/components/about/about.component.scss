@@ -13,11 +13,15 @@
 
     &_item {
       background-color: $white-color;
-      padding: 7rem $s-3;
+      padding: 4rem $s-3;
       border-radius: $border-radius3;
       box-shadow: $box-shadow2;
       display: grid;
       grid-gap: $s-2;
+
+      @media only screen and (min-width: 768px) {
+        padding: 7rem $s-3;
+      }
     }
   }
 }
