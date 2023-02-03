@@ -16,7 +16,7 @@
       box-shadow: $box-shadow2;
       display: grid;
       grid-gap: $s-2;
-
+      align-content: flex-start;
       &_img {
         display: flex;
         justify-content: center;
@@ -28,6 +28,9 @@
             width: 40px;
           }
         }
+      }
+      .title {
+        text-align: center;
       }
     }
   }

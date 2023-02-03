@@ -14,15 +14,13 @@
     margin: auto;
 
     &_item {
-      background-color: $white-color;
-      // color: $white-color;
+      background-color: $white-color; 
       padding: $s-4 $s-2;
       border-radius: $border-radius3;
       box-shadow: $box-shadow1;
       display: grid;
-      // justify-items: center;
       grid-gap: $s-2;
-
+      align-content: flex-start;
       &_img {
         display: flex;
         justify-content: center;
