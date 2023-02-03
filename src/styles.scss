@@ -340,28 +340,11 @@ section:has(.bubble) {
 }
 
 .bubble-container {
-  width: 54vh;
-  height: 100vh;
+  width: 100vw;
+  height: 150vh;
 
   position: absolute;
   overflow: hidden;
-
-  &:has(.left) {
-    left: 0;
-  }
-
-  &:has(.right) {
-    right: 0;
-    bottom: -25%;
-  }
-
-  @media only screen and (min-width: 768px) {
-    height: 70vh;
-
-    &:has(.right) {
-      bottom: -50%;
-    }
-  }
 }
 
 .bubble {
@@ -372,21 +355,28 @@ section:has(.bubble) {
   position: absolute;
   z-index: -1;
 
-  top: 50%;
-  transform: translateY(-50%);
-
   &.left {
     left: -25%;
-    transform: translateY(-100%);
+    top: 5%;
+
+    &.top {
+      top: 25%;
+    }
+
+    &.bottom {
+      top: unset;
+      bottom: 35%;
+    }
   }
 
   &.right {
     right: -25%;
+    bottom: 25%;
   }
 
   @media only screen and (min-width: 768px) {
-    width: 26vh;
-    height: 26vh;
+    width: 25%;
+    height: 25%;
   }
 }
 
