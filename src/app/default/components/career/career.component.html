@@ -36,5 +36,6 @@
     <span class="modal_area_close clickable" (click)="isCareerModal = false">
       <img src="../../../../../assets/img/svg/close-square.svg" alt="icon" class="icon">
     </span>
+    <app-career-details [career]="currentCareer" (isCareerModal)="closeCareerDetails()"></app-career-details>
   </div>
 </div>

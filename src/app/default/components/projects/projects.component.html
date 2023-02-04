@@ -1,0 +1,33 @@
+<section class="hero-sect">
+    <div class="hero-sect_content">
+      <h2 class="title">Our Projects</h2>
+      <p>Diverse portfolio of investment options and expert financial guidance to help clients reach their financial goals. They use advanced technology to support clients' wealth growth.</p>
+    </div>
+  </section>
+
+<section class="projects sect">
+    <div class="container">
+      <!-- <div class="sect_header">
+        <h2>Our Projects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Fusce massa tortor turpis magna proin morbi. At vitae pharetra euismod
+          arcu adipiscing vitae fusce id.</p>
+      </div> -->
+  
+      <div class="projects_list">
+        <div class="projects_list_item" *ngFor="let project of projects">
+          <h4 class="projects_list_item_title">{{project.title}}</h4>
+          <div class="projects_list_item_card">
+            <div class="projects_list_item_card_item" *ngFor="let item of project.list ">
+              <div class="projects_list_item_card_item_img">
+                <img [src]="item.image" alt="">
+              </div>
+  
+              <div class="projects_list_item_card_item_descrp dis-flex">
+                <p>{{item.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

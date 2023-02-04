@@ -52,7 +52,6 @@ export class CareerComponent {
   openCareerDetails(career: any) {
     this.currentCareer = career
     this.isCareerModal = true
-    console.log(this.currentCareer);
     
   } 
   

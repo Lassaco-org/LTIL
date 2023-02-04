@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { ProjectService } from 'src/app/shared/services/project.service';
-import { ServiceService } from 'src/app/shared/services/service.service';
 
 @Component({
   selector: 'app-services',
@@ -34,16 +32,4 @@ export class ServicesComponent {
       description: 'Lasaco trading and investment (LTIL) is also into the business of real estate. We help individuals and businesses find, purchase, or rent properties that meet their needs We operate as a broker, agents, property managers, developers, or a combination of these. Currently we have some landed properties and prospecting building some smart houses in highbrow areas.'
     },
   ]
-  projects: any
-  constructor(private serviceService: ServiceService, private projectService: ProjectService) {}
-  
-  ngOnInit(): void {
-
-    // Get services
-    // this.services = this.serviceService.getServices()
-
-    // Get projects
-    this.projects = this.projectService.getProjects()
-    
-  }
 }

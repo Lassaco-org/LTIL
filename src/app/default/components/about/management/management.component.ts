@@ -16,8 +16,8 @@ export class ManagementComponent {
     {
       id: 2,
       image: 'assets/img/team/team-2.svg',
-      name: 'Rotimi',
-      role: 'Deputy, Corporate Service'
+      name: 'Oluwarotimi Shonibare',
+      role: 'Investment Analyst'
     },
     // {
     //   id: 3,
