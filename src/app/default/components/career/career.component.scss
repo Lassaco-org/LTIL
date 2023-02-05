@@ -5,6 +5,29 @@
     background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/career-hero.png');
 }
 
+.send {
+    &_area {
+        display: flex;
+        gap: $s-2;
+        &_cont {
+            display: flex;
+            align-items: center;
+            background-color: $white-color;
+            border-radius: $border-radius3;
+            box-shadow: $box-shadow2;
+            padding: $s-2 $s-3;
+            &:last-child {
+                width: 100%;
+                
+            }
+        }
+    }
+    &_btns {
+        gap: $s-4;
+        margin-top: $s-6;
+    }
+}
+
 .careers {
     &_list {
         display: grid;

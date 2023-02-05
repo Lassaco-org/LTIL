@@ -19,6 +19,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { TeamDetailsComponent } from './components/about/team-details/team-details.component';
 import { CareerDetailsComponent } from './components/career/career-details/career-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BoardComponent,
     ServicesComponent,
     TeamDetailsComponent,
-    CareerDetailsComponent
+    CareerDetailsComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,

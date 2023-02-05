@@ -15,7 +15,7 @@ export class ManagementComponent {
     },
     {
       id: 2,
-      image: 'assets/img/team/team-2.svg',
+      image: 'assets/img/team/Oluwarotmi_Shonibare.svg',
       name: 'Oluwarotimi Shonibare',
       role: 'Investment Analyst'
     },

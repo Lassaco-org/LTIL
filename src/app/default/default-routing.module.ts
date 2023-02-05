@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ManagementComponent } from './components/about/management/management.component';
 import { ServicesComponent } from './components/services/services.component';
 import { DefaultComponent } from './default.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
   {
@@ -59,6 +60,14 @@ const routes: Routes = [
         component: ServicesComponent,
         data: {
           title: 'Services',
+          description: 'Description Meta Tag Content',
+        },
+      },
+      {
+        path: 'projects',
+        component: ProjectsComponent,
+        data: {
+          title: 'Projects',
           description: 'Description Meta Tag Content',
         },
       },
