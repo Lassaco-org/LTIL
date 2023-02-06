@@ -11,13 +11,14 @@ export class ManagementComponent {
       id: 1,
       image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
       name: 'Mr Rilwan Oshinusi',
-      role: 'Managing Director, LTIL'
+      role: 'Managing Director, Lasaco Trading and Investment'
     },
     {
       id: 2,
-      image: 'assets/img/team/Oluwarotmi_Shonibare.svg',
+      image: 'assets/img/team/Oluwarotmi_Shonibare.png',
       name: 'Oluwarotimi Shonibare',
-      role: 'Investment Analyst'
+      role: 'Senior Business Analyst ',
+      description: 'Oluwarotimi Shonibare has cognitive experience in Human Resources, Finance, Customer Service, Relationship Management, Business Development, Procurement and Corporate Sales as he has worked majorly in the Financial Services Sector over the years. He is an Associate Member of the Chartered Institute of Administration (ACIA) with a background in Banking and Finance (Bsc.). He is also in the final stage of being an Associate Member of the Chartered Institute of Personnel Management (CIPM) amongst other trainings.'
     },
     // {
     //   id: 3,

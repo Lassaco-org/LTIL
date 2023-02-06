@@ -13,11 +13,11 @@
   }
 
   .lt_flex_cards {
-    flex-basis: 55%;
+    flex-basis: 65%;
 
     .services_list {
-      @include card(280px);
-
+      @include card(350px);
+      gap: $s-2;
       &_item {
         background-color: $primary1;
         padding: $s-4 $s-2;
@@ -26,20 +26,25 @@
         display: grid;
         grid-gap: $s-2;
         align-content: flex-start;
+        border: 1px solid transparent;
+        transition: all .2s ease;
         &_img {
           display: flex;
           justify-content: center;
 
           .icon {
-            @include icon-area(55px, $primary6);
+            @include icon-area(35px, $primary6);
 
             img {
-              width: 40px;
+              width: 20px;
             }
           }
         }
         .title {
           text-align: center;
+        }
+        &:hover {
+          border: 1px solid $primary6;
         }
       }
     }

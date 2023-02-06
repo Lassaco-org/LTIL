@@ -16,7 +16,7 @@
     </div>
     <div class="lt_flex_cards">
       <div class="services_list">
-        <div class="services_list_item" *ngFor="let service of services">
+        <div class="services_list_item clickable" *ngFor="let service of services" routerLink="/services">
           <div class="services_list_item_img">
             <span class="icon">
               <img [src]="service.icon" alt="">

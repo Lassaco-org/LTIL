@@ -18,7 +18,7 @@ export class BoardComponent {
       id: 2,
       image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
       name: 'Mr Rilwan Oshinusi',
-      role: 'Managing Director, LTIL',
+      role: 'Managing Director, Lasaco Trading and Investment',
       description: ''
     },
     {
@@ -32,7 +32,7 @@ export class BoardComponent {
       id: 4,
       image: 'assets/img/team/Mr_Akinwale_Sofile.svg',
       name: 'Mr. Akinwale Sofile',
-      role: 'Executive Director',
+      role: 'Non-Executive Director',
       description: 'Mr. Akinwale Sofile is a graduate of Business Administration from Adekunle Ajasin University, Akungba, Ondo State as well as a graduate of Accountancy from the Yaba College of Technology.He has a Diploma in Insurance from the Chartered Insurance Institute of Nigeria. He is an experienced Finance Professional; He is also a Fellow of the Institute of Chartered Accountants of Nigeria (ICAN) as well as an Associate Member of the Nigerian Institute of Management (NIM). With about two decades of cumulative experience in the insurance industry, he joined LASACO Assurance Plc. as the DGM (Finance).Prior to his joining LASACO Assurance Plc, he worked with WAPIC Insurance as the Financial Controller.He also has working experience with Universe Re – insurance Company Limited (Now Sterling Assurance),Modandola Investments and Niger Insurance Plc. He has relevant industry experience in areas such as Financial Reporting, Credit Control, Treasury Management, Investments Budgeting and Performance Management as well as Risk Management. He has attended several training courses, seminars and workshop locally and internationally'
     },
   ]

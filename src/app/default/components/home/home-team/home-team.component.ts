@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-home-team',
@@ -38,4 +38,21 @@ export class HomeTeamComponent {
   ]
   currentMember: any;
   isMemberModal: boolean = false
+  
+  @ViewChild('cardContainer', { static: true }) cardContainer: ElementRef;
+
+  constructor (private el: ElementRef) {
+
+  }
+  scrollLeft() {
+    var elem = this.cardContainer.nativeElement.children[0];
+    // var item = elem.getElementByClassName('item')
+    console.log(elem);
+    
+  }
+
+  scrollRight() {
+    this.cardContainer.nativeElement;
+  }
+
 }
