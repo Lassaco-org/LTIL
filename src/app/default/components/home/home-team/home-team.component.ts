@@ -9,51 +9,31 @@ export class HomeTeamComponent {
   members = [
     {
       id: 1,
-      image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service',
+      image: 'assets/img/team/Otunba_Akin_Doherty.svg',
+      name: 'Otunba Akin Doherty',
+      role: 'Chairman',
+      description: 'Otunba Akin Doherty is a Non-Executive Director of LASACO Assurance Plc. He has over 40 years experience in the private sector, both locally and internationally, as well as the public service in the areas of Financial Services, Computer Systems’ Implementation, Marketing and Transformation Strategy.'
     },
     {
       id: 2,
-      image: 'assets/img/team/team-2.svg',
+      image: 'assets/img/team/Mr_Rilwan_Oshinusi.svg',
       name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
+      role: 'Managing Director, LTIL',
+      description: ''
     },
     {
       id: 3,
-      image: 'assets/img/team/team-3.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
+      image: 'assets/img/team/Mr_Adeniyi_Rasaq_Saliu.svg',
+      name: 'Mr. Adeniyi Rasaq Saliu',
+      role: 'Non-Executive Director',
+      description: 'Adeniyi, Rasaq Saliu is the Managing Director of Prime ARBITRAGE Limited, a reputable Business and Transaction Consulting, Advisory, Logistics & Consierge services firm in Lagos.'
     },
     {
       id: 4,
-      image: 'assets/img/team/team-4.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
-    },
-    {
-      id: 5,
-      image: 'assets/img/team/team-5.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
-    },
-    {
-      id: 6,
-      image: 'assets/img/team/team-6.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
-    },
-    {
-      id: 7,
-      image: 'assets/img/team/team-7.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
-    },
-    {
-      id: 8,
-      image: 'assets/img/team/team-8.svg',
-      name: 'Mr Rilwan Oshinusi',
-      role: 'Deputy Managing Director, Corporate Service'
+      image: 'assets/img/team/Mr_Akinwale_Sofile.svg',
+      name: 'Mr. Akinwale Sofile',
+      role: 'Executive Director',
+      description: 'Mr. Akinwale Sofile is a graduate of Business Administration from Adekunle Ajasin University, Akungba, Ondo State as well as a graduate of Accountancy from the Yaba College of Technology.'
     },
   ]
   currentMember: any;
