@@ -37,7 +37,7 @@ export class ProjectsComponent {
         {
           id: 2.1,
           image: 'assets/img/projects/project-5.svg',
-          description: 'Lasaco trading and investment (LTIL) is into printing activities focusing majorly on corporate gifts. We specialize in providing businesses and organizations with customized, branded gifts for their employees, clients, and partners. These gifts are often used for events such as holidays, company anniversaries, and other special occasions'
+          description: 'Lasaco trading and investment (LTIL) is into printing activities focusing majorly on corporate gifts. We specialize in providing businesses and organizations with customized, branded gifts for their employees, clients, and partners. These gifts are often used for events such as festive period(s), company anniversaries, and other special occasion.'
         }
       ]
     },
@@ -48,7 +48,7 @@ export class ProjectsComponent {
         {
           id: 3.1,
           image: 'assets/img/projects/real-estate.png',
-          description: 'Lasaco trading and investment (LTIL) is also into the business of real estate. We help individuals and businesses find, purchase, or rent properties that meet their needs We operate as a broker, agents, property managers, developers, or a combination of these. Currently we have some landed properties and prospecting building some smart houses in highbrow areas.'
+          description: 'Lasaco trading and investment (LTIL) is also into the business of real estate. We help individuals and businesses find, purchase, or rent properties that meet their needs We operate as a broker, agents, property managers, developers, or a combination of these. Currently we have some landed properties and on-course to have some buildings in developing and highbrow areas.'
         }
       ]
     },

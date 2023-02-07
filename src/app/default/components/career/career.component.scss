@@ -2,14 +2,29 @@
 @import '../../../../assets/css/mixins.scss';
 
 .hero-sect {
-    background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/career-hero.png');
+    background-image: url('../../../../assets/img/career-hero.png');
 }
 
 .send {
-    &_area {
+    &_option {
+        @include card(500px);
+        margin-bottom: $s-6;
+        &_item {
+            background-color: $white-color;
+            border-radius: $border-radius3;
+            box-shadow: $box-shadow2;
+            padding: $s-4;
+            .title {
+                margin-bottom: $s-2;
+                color: $primary6;
+            }
+        }
+    }
+    &_solicited  {
         display: flex;
+        flex-wrap: wrap;
         gap: $s-2;
-        &_cont {
+        &_box {
             // display: flex;
             // align-items: center;
             background-color: $white-color;
@@ -19,6 +34,14 @@
             &:last-child {
                 width: 100%;
                 
+            }
+            .title {
+                margin-bottom: $s-2;
+            }
+            a {
+                color: $secondary6;
+                font-weight: 700;
+                text-decoration: underline;
             }
         }
     }

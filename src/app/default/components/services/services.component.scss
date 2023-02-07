@@ -2,12 +2,13 @@
 @import '../../../../assets/css/mixins.scss';
 
 .hero-sect {
-  background-image: linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)), url('../../../../assets/img/services-hero.png');
+  background-image: url('../../../../assets/img/services-hero.jpg');
+  // linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)),
 }
 
 .services {
   &_list {
-    @include card(350px);
+    @include card(270px);
     &_item {
       background-color: $white-color;
       padding: $s-4 $s-2;

@@ -304,19 +304,22 @@ small {
   align-items: center;
   background-color: rgba(2, 45, 51, 0.5);
   color: $white-color;
+  // background-position: center;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  min-height: 400px;
 
-  @media only screen and (min-width: 745px) {
-    margin: 5%; // same as the general sect size
-    border-radius: $border-radius3;
-  }
+  // @media only screen and (min-width: 745px) {
+  //   margin: 5%; // same as the general sect size
+  //   border-radius: $border-radius3;
+  // }
 
   &_content {
-    min-height: 280px;
     display: grid;
     align-content: center;
     text-align: center;
-    filter: drop-shadow(0px 3.13433px 3.13433px rgba(0, 0, 0, 0.03));
+    // filter: drop-shadow(0px 3.13433px 3.13433px rgba(0, 0, 0, 0.03));
     padding: 5%; // same as the general sect size
 
     @media only screen and (min-width: 745px) {
