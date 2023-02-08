@@ -7,16 +7,30 @@
 
 .send {
     &_option {
-        @include card(500px);
+        display: flex;
+        gap: $s-2;
         margin-bottom: $s-6;
+        @media only screen and (max-width: 750px) {
+            flex-direction: column;
+        }
         &_item {
             background-color: $white-color;
             border-radius: $border-radius3;
             box-shadow: $box-shadow2;
             padding: $s-4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media only screen and (min-width: 750px) {
+                flex-basis: 48%;
+            }
             .title {
                 margin-bottom: $s-2;
                 color: $primary6;
+            }
+            .btn {
+                margin-top: $s-3;
+                width: 100%;
             }
         }
     }
