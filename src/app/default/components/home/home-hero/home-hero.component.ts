@@ -10,7 +10,7 @@ export class HomeHeroComponent {
 
   bgImages = [
     { id: 1, image: 'assets/img/home-hero-img.png' },
-    { id: 2, image: 'assets/img/shutterstock_download.jpg' },
+    { id: 2, image: 'assets/img/home-hero-img-2.jpg' },
     // { id: 3, image: 'linear-gradient(90deg, rgba(17, 79, 157, 0.7) 50%, rgba(255, 255, 255, 0.49) 100%), url("assets/img/hero-bg-3.png")' },
     // { id: 4, image: 'linear-gradient(90deg, rgba(17, 79, 157, 0.7) 50%, rgba(255, 255, 255, 0.49) 100%), url("assets/img/hero-bg-4.png")' },
   ]
