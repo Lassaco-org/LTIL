@@ -2,7 +2,8 @@
 @import '../../../../assets/css/mixins.scss';
 
 .hero-sect {
-  background-image: url('../../../../assets/img/project-hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), url('../../../../assets/img/project-hero.png');
+  
 }
 
 // projects

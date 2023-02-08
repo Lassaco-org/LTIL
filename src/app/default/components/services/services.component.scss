@@ -2,7 +2,7 @@
 @import '../../../../assets/css/mixins.scss';
 
 .hero-sect {
-  background-image: url('../../../../assets/img/services-hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.03), rgba(0, 0, 0, 0.03)), url('../../../../assets/img/service-hero.png');
   // linear-gradient(rgba(2, 45, 51, 0.5), rgba(2, 45, 51, 0.5)),
 }
 
