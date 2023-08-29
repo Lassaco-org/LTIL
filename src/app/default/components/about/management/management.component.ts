@@ -23,7 +23,7 @@ export class ManagementComponent {
     },
     {
       id: 3,
-      image: 'assets/img/team/team-3.svg',
+      image: 'assets/img/team/niran.png',
       name: 'Adeniran O. Adeluwoye',
       role: 'Company Secretary',
       description: 'Adeniran O. Adeluwoye is the Ag. Company Secretary of Lasaco Trading and investment Ltd, a Legal Practitioner and member of Nigerian Bar Association (NBA). He is Vast in resolution and Regulatory & Compliance practice, creative and resourceful problem solver whose approach to legal problems yields viable solutions, possesses excellent legal writing and research skills with a noteworthy experience in drafting and reviewing court processes as well as commercial agreements. He is a student member of the Institute of Chartered Secretaries and Administrators of Nigeria (ICSAN). Adeniran obtained his LL. B from the Lagos state University Ojo and his BL at the Nigeria Law School Bwari Abuja. An astute litigator and dispute resolution personified has distinguished himself in the corporate world.'
